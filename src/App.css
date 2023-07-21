@@ -104,6 +104,7 @@ width: 30px;
 
 .myImage img {
   width: 35%;
+  border: 3px solid green;
   border-radius: 50%;
   margin-top: 75px;
 }
