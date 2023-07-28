@@ -2,56 +2,33 @@
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
-/* border: 1px solid rgb(13, 0, 255); */
 }
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-  
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Mono:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@700&family=Roboto+Mono:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Dancing+Script:wght@700&family=Inter:wght@700&family=Roboto+Mono:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant:wght@400;700&family=Dancing+Script:wght@700&family=Inter:wght@700&family=Roboto+Mono:wght@700&display=swap');
+                         /* FONTS */
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant&family=Dancing+Script:wght@700&family=Inter:wght@700&family=Lumanosimo&family=Roboto+Mono:wght@700&display=swap');
 
 
-/* HEADER STYLING */
+                     /* HEADER STYLING */
 
 
-.contactBar{
-  display: flex;
-  justify-content: space-between;
-  /* height: 30px; */
-  background-color: rgba(13, 145, 150, 0.715);
-}
-
-#contactLogos h3{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;
-  margin-right: 10px;
-}
-
-#contactLogos {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0px 10px;
+  justify-content: space-between;
 }
 
-#contactLogos img{
-height: 25px;
-width: 30px;
+.header a {
+  font-family: 'Lumanosimo', cursive;
+  text-decoration: none;
+  color: rgba(67, 65, 65, 0.681);
 }
 
-.links {
-  display: flex;
-  align-items: end;
-  justify-content: flex-end;
 
-}
-
-.links img {
-  height: 37px;
-  width: 40px;
-
-}
 
                     /* MAIN STYLING */
 
@@ -61,11 +38,11 @@ width: 30px;
   background-image: url("./components/images/willian-justen-de-vasconcellos-jUCQRQeRs3k-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
-  height: 100vh;
-  width: 100vw;
-  /* border: 2px solid red; */
+  background-size: 100vh;
+  height: 100%;
+  width: 100%;
 }
+
 .about p {
   font-family: 'Cormorant', serif;
   font-size: 20px;
@@ -75,11 +52,7 @@ width: 30px;
   border-radius: 3%;
   text-align: center;
   margin-left: 40px;
- 
-  
-  
 }
-
 
 .languages{
   width: 250px;
@@ -104,7 +77,7 @@ width: 30px;
 
 .myImage img {
   width: 35%;
-  border: 3px solid green;
+  border: 5px solid rgba(35, 41, 41, 0.399);
   border-radius: 50%;
   margin-top: 75px;
 }
@@ -113,7 +86,6 @@ width: 30px;
   text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 35px;
-  /* background-color: rgba(14, 182, 177, 0); */
   width: fit-content;
   margin-top: 10px;
 }
@@ -122,10 +94,8 @@ width: 30px;
 
 .leftpnl {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid blue; */
 }
 
 .projectButton {
@@ -142,14 +112,88 @@ width: 30px;
  margin-top: 20px;
 }
 
+
+                 /* FOOTER STYLING */
+
+.contactBar{
+  background-color: rgba(169, 157, 146, 0.374);
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+  position: fixed;
+  bottom: 0;
+}
+
+.links img {
+  height: 30px;
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
              /* PROJECTS COMPONENT STYLING */
+
 
 .projects{
   background-image: url("./components/images/projectsbackground.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size:cover;  
   height: 100vh;
   width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }             
 
+.projects h1{
+  height: fit-content;
+  padding-top: 5%;
+  margin-bottom: 30px;
+  font-size: 70px;
+  font-family: 'Inter', sans-serif;
+  color: rgb(254, 158, 158); 
+  text-shadow: -1px -1px 0 #000;
+}
+
+.projects h4 {
+  /* border: 2px solid red; */
+  width: fit-content;
+  /* margin-top: 15%; */
+  color:rgb(255, 255, 255)
+
+}
+
+.projectsContainer{
+  height: 40%;
+  width: 100%;
+  background-color: rgb( 254, 239, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsContainer img {
+  height: 150px;
+  margin: 15px 35px;
+}
+.dogAppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.memoryGameContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projectsContainer a {
+  text-decoration: none;
+  color: rgb(162, 92, 1);
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 500;
+}

@@ -1,10 +1,12 @@
 import React from 'react'
-import Contact from './Contact'
+import { Link } from 'react-router-dom'
+
 
 export default function Header() {
   return (
     <div className='header'>
-      <Contact />
+     <Link to='/'>Homepage</Link> 
+     <Link to='/projects'>Projects</Link> 
      
     </div>
   )

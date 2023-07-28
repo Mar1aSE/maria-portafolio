@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Contact from './Contact'
 export default function Footer() {
   return (
     <div className='footer'>
-      <h4>Lets Build Something Beautiful!</h4>        
+      <Contact />    
     </div>
   )
 }
