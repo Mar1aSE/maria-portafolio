@@ -9,11 +9,11 @@ export default function Projects() {
       <div className='projectsContainer'>
         <div className='dogAppContainer'>
           <img src={dogCareSheet} alt='dog caresheet website screenshot'/>
-          <a href='https://dog-basic-caresheet.netlify.app'>https://dog-basic-caresheet.netlify.app</a>
+          <a href='https://dog-basic-caresheet.netlify.app'>Click to view</a>
         </div>
         <div className='memoryGameContainer'>
           <img src={memorycCardsGame} alt='memory card game screenshot '/>
-          <a href='https://mariomemorycards.netlify.app'>https://mariomemorycards.netlify.app</a>
+          <a href='https://mariomemorycards.netlify.app'>Click to view</a>
         </div>
 
       </div>
